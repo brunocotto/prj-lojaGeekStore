@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<link rel="stylesheet" href="assets/css/menuStyle.css"/>
+	<!-- Link utilizado para usar os ícones do google-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+	<title>GeekStore</title>
+</head>
+	<body>
+		<header class="container-header">
+			<div class="style-logo-header">
+				<img src="./assets/img/GEEKSTORE_Logo.png" alt="Logo Loja GeekStore">
+			</div>
+			<div class="style-nav-header">
+				<!-- incluir tag form-->
+				<div class="container-search">
+					<!-- Input search-->
+					<input type="text" class="search-input" placeholder="O que você está procurando?">
+					<!-- Botão de pesquisa com ícone da lupa centralizado-->
+					<button type="submit" class="search-btn">
+						<span id="icon-lupa" class="material-symbols-outlined">search</span>
+					</button>
+				</div>
+				<!-- incluir li's para entrar, criar conta e carrinho-->
+				<nav class="container-acesso">
+					<ul class="area-acesso">
+						<li id="navbar-acesso" href="./login.html">
+							<div class="login">
+								<span id ="icon" class="material-symbols-sharp">person</span>
+								<span id="entrar">ENTRAR</span>
+							</div>
+						</li>
+						<li id="btn-criarconta">
+							<button class="button-criarconta">
+							<a  href="#">CRIAR CONTA</a>
+							</button>
+						</li>
+						<li class="button-carrinho" href="#">
+							<div class="carcompras">
+								<span id ="icon" class="material-symbols-outlined">shopping_cart</span>
+							</div>
+						</li>
+						<li class="button-favoritos" href="#">
+							<div class="favoritos">
+								<span id="icon" class="material-symbols-outlined">favorite</span>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<nav class="container-menu">
+				<div class="nav-list">
+					<ul>
+						<li id="nav-item"><a href="#container-menu" class="nav-link">Home</a></li>
+						<li id="nav-item"><a href="#destaques" class="nav-link">Funko Pop</a></li>
+						<li id="nav-item"><a href="#mais-vendidos" class="nav-link">Mais Vendidos</a></li>
+						<li id="nav-item"><a href="#" class="nav-link">Colecionáveis</a></li>
+						<li id="nav-item"><a href="#container-marcas" class="nav-link">Fabricantes</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		
+		<section id="carrosel-boot">
+			<div>
+				<img id="img-carrosel" src="./assets/img/nerdgeralimg.png">
+			</div>
+		</section>
+
+		<div id="container-marcas">
+			<nav class="marcas">
+				<div class="nav-marcas">
+					<div id="marcas-item">
+						<figure>
+							<img id="img-marcas" src="./assets/img/logo_AbysseCorp_texte-blanc-sur-noir-removebg-preview.png" width="140" height="60">
+						</figure>	
+					</div>
+					<div id="marcas-item">
+						<figure>
+							<img id="img-marcas" src="./assets/img/beastkingdom-removebg-preview.png" width="140" height="60">
+						</figure>	
+					</div>
+					<div id="marcas-item">
+						<figure>
+							<img id="img-marcas" src="./assets/img/Banpresto-Logo.wine.png" width="140" height="60">
+						</figure>	
+					</div>
+					<div id="marcas-item">
+						<figure>
+							<img id="img-marcas" src="./assets/img/Funko-Logo-NEW.webp" width="140" height="40">
+						</figure>	
+					</div>
+					<div id="marcas-item">
+						<figure>
+							<img id="img-marcas" src="./assets/img/mezcotoyz-removebg-preview.png" width="145" height="60">
+						</figure>	
+					</div>
+				</div>
+			</nav>
+		</div>
+
+		<section id="destaques">
+		<div>
+			<h2 id="textosh2">Destaques Funko Pop na GeekStore!</h2>
+		</div>
+		<hr id="linhadiv">
+		<br>
+			<div class="recentes">
+				<div class="container-object">
+					<div id="container-img">
+						<figure>
+							<img id="img-anuncio" src="./assets/img/darthVaderProduto.png">
+						</figure>		
+					</div>
+
+					<nav class="nav-container-inner">
+						<div id="container-txtanuncio">
+							<a id="texto-anuncio">Funko Pop! #343 Darth Vader Lights E Sound - Star Wars</a>
+						</div>
+						<br>
+						<div id="container-txtanuncio">
+							<span id="gatilho-preco" style="text-decoration:line-through;">De R$289,90 por</span>
+							<span id="preco-produto"> R$219,90</span>
+						</div>
+						<br>
+						<div id="container-inner">
+							<ul class="area-compra">
+							<a class="btn-carrinho" href="#">
+								<div class="icon-compra">
+									<span id ="icon-compra" class="material-symbols-outlined">shopping_cart</span>
+								</div>
+							</a>
+							<a class="btn-favoritos" href="#">
+								<div class="icon-favoritos">
+									<span id="icon-compra" class="material-symbols-outlined">favorite</span>
+								</div>
+							</a>
+							<button class="btn-comprar">
+								<a  href="#">COMPRAR</a>
+								</button>
+							</ul>		
+						</div>
+					</nav>
+				</div>
+				<div class="container-object">
+					<div id="container-img">
+						<figure>
+							<img id="img-anuncio" src="./assets/img/homemaranhaproduto-removebg-preview.png">
+						</figure>		
+					</div>
+
+					<nav class="nav-container-inner">
+						<div id="container-txtanuncio">
+							<a id="texto-anuncio">Funko Pop! Spider-Man Miles Morales Bodega Cat Suit Pop!</a>
+						</div>
+						<br>
+						<div id="container-txtanuncio">
+							<span id="gatilho-preco" style="text-decoration:line-through;">De R$199,90 por</span>
+							<span id="preco-produto"> R$159,90</span>
+						</div>
+						<br>
+						<div id="container-inner">
+							<ul class="area-compra">
+							<a class="btn-carrinho" href="#">
+								<div class="icon-compra">
+									<span id ="icon-compra" class="material-symbols-outlined">shopping_cart</span>
+								</div>
+							</a>
+							<a class="btn-favoritos" href="#">
+								<div class="icon-favoritos">
+									<span id="icon-compra" class="material-symbols-outlined">favorite</span>
+								</div>
+							</a>
+							<button class="btn-comprar">
+								<a  href="#">COMPRAR</a>
+								</button>
+							</ul>		
+						</div>
+					</nav>
+				</div>
+				<div class="container-object">
+					<div id="container-img">
+						<figure>
+							<img id="img-anuncio" src="./assets/img/deadpoolproduto-removebg-preview.png">
+						</figure>		
+					</div>
+
+					<nav class="nav-container-inner">
+						<div id="container-txtanuncio">
+							<a id="texto-anuncio">Funko Pop! Deadpool Bedtime Deadpool in Robe Pop!</a>
+						</div>
+						<br>
+						<div id="container-txtanuncio">
+							<span id="gatilho-preco" style="text-decoration:line-through;">De R$259,49 por</span>
+							<span id="preco-produto"> R$179,90</span>
+						</div>
+						<br>
+						<div id="container-inner">
+							<ul class="area-compra">
+							<a class="btn-carrinho" href="#">
+								<div class="icon-compra">
+									<span id ="icon-compra" class="material-symbols-outlined">shopping_cart</span>
+								</div>
+							</a>
+							<a class="btn-favoritos" href="#">
+								<div class="icon-favoritos">
+									<span id="icon-compra" class="material-symbols-outlined">favorite</span>
+								</div>
+							</a>
+							<button class="btn-comprar">
+								<a  href="#">COMPRAR</a>
+								</button>
+							</ul>		
+						</div>
+					</nav>
+				</div>
+				<div class="container-object">
+					<div id="container-img">
+						<figure>
+							<img id="img-anuncio" src="./assets/img/thewitcherproduto-removebg-preview.png">
+						</figure>		
+					</div>
+
+					<nav class="nav-container-inner">
+						<div id="container-txtanuncio">
+							<a id="texto-anuncio">Funko Pop! Geralt #1192 Netflix The Witcher - Wolf White</a>
+						</div>
+						<br>
+						<div id="container-txtanuncio">
+							<span id="gatilho-preco" style="text-decoration:line-through;">De R$159,90 por</span>
+							<span id="preco-produto"> R$119,90</span>
+						</div>
+						<br>
+						<div id="container-inner">
+							<ul class="area-compra">
+							<a class="btn-carrinho" href="#">
+								<div class="icon-compra">
+									<span id ="icon-compra" class="material-symbols-outlined">shopping_cart</span>
+								</div>
+							</a>
+							<a class="btn-favoritos" href="#">
+								<div class="icon-favoritos">
+									<span id="icon-compra" class="material-symbols-outlined">favorite</span>
+								</div>
+							</a>
+							<button class="btn-comprar">
+								<a  href="#">COMPRAR</a>
+								</button>
+							</ul>		
+						</div>
+					</nav>
+				</div>
+			</div>
+		</section>
+		
+		<section id="mais-vendidos">
+			<div>
+				<h2 id="textosh2">Mais Vendidos na Geek!</h2>
+			</div>
+			<hr id="linhadiv">
+			<br>
+				<div class="recentemente-vendidos">
+					<div class="container-object">
+						<div id="container-img">
+							<figure>
+								<img id="img-anuncio" src="./assets/img/chewbaccaProduto-removebg-preview.png">
+							</figure>		
+						</div>
+	
+						<nav class="nav-container-inner">
+							<div id="container-txtanuncio">
+								<a id="texto-anuncio">Funko Pop! Star Wars Last Jedi Chewbacca Com Porg #195</a>
+							</div>
+							<br>
+							<div id="container-txtanuncio">
+								<span id="gatilho-preco" style="text-decoration:line-through;">De R$219,90 por</span>
+								<span id="preco-produto"> R$179,90</span>
+							</div>
+							<br>
+							<div id="container-inner">
+								<ul class="area-compra">
+								<a class="btn-carrinho" href="#">
+									<div class="icon-compra">
+										<span id ="icon-compra" class="material-symbols-outlined">shopping_cart</span>
+									</div>
+								</a>
+								<a class="btn-favoritos" href="#">
+									<div class="icon-favoritos">
+										<span id="icon-compra" class="material-symbols-outlined">favorite</span>
+									</div>
+								</a>
+								<button class="btn-comprar">
+									<a  href="#">COMPRAR</a>
+									</button>
+								</ul>		
+							</div>
+						</nav>
+					</div>
+					<div class="container-object">
+						<div id="container-img">
+							<figure>
+								<img id="img-anuncio" src="./assets/img/jonSnowProduto-removebg-preview.png">
+							</figure>		
+						</div>
+	
+						<nav class="nav-container-inner">
+							<div id="container-txtanuncio">
+								<a id="texto-anuncio">Funko Pop! Game Of Thrones Got Jon Snow #07 Prt Entre</a>
+							</div>
+							<br>
+							<div id="container-txtanuncio">
+								<span id="gatilho-preco" style="text-decoration:line-through;">De R$99,90 por</span>
+								<span id="preco-produto"> R$79,90</span>
+							</div>
+							<br>
+							<div id="container-inner">
+								<ul class="area-compra">
+								<a class="btn-carrinho" href="#">
+									<div class="icon-compra">
+										<span id ="icon-compra" class="material-symbols-outlined">shopping_cart</span>
+									</div>
+								</a>
+								<a class="btn-favoritos" href="#">
+									<div class="icon-favoritos">
+										<span id="icon-compra" class="material-symbols-outlined">favorite</span>
+									</div>
+								</a>
+								<button class="btn-comprar">
+									<a  href="#">COMPRAR</a>
+									</button>
+								</ul>		
+							</div>
+						</nav>
+					</div>
+					<div class="container-object">
+						<div id="container-img">
+							<figure>
+								<img id="img-anuncio" src="./assets/img/kyloRenProduto-removebg-preview.png">
+							</figure>		
+						</div>
+	
+						<nav class="nav-container-inner">
+							<div id="container-txtanuncio">
+								<a id="texto-anuncio">Funko Pop! Star Wars Episode 8 Kylo Ren Exlcusivo Toys R Us</a>
+							</div>
+							<br>
+							<div id="container-txtanuncio">
+								<span id="gatilho-preco" style="text-decoration:line-through;">De R$159,90 por</span>
+								<span id="preco-produto"> R$119,90</span>
+							</div>
+							<br>
+							<div id="container-inner">
+								<ul class="area-compra">
+								<a class="btn-carrinho" href="#">
+									<div class="icon-compra">
+										<span id ="icon-compra" class="material-symbols-outlined">shopping_cart</span>
+									</div>
+								</a>
+								<a class="btn-favoritos" href="#">
+									<div class="icon-favoritos">
+										<span id="icon-compra" class="material-symbols-outlined">favorite</span>
+									</div>
+								</a>
+								<button class="btn-comprar">
+									<a  href="#">COMPRAR</a>
+									</button>
+								</ul>		
+							</div>
+						</nav>
+					</div>
+					<div class="container-object">
+						<div id="container-img">
+							<figure>
+								<img id="img-anuncio" src="./assets/img/wolverineProduto-removebg-preview.png">
+							</figure>		
+						</div>
+	
+						<nav class="nav-container-inner">
+							<div id="container-txtanuncio">
+								<a id="texto-anuncio">Funko Pop! X-Men 20th Anniversary Wolverine in Jacket</a>
+							</div>
+							<br>
+							<div id="container-txtanuncio">
+								<span id="gatilho-preco" style="text-decoration:line-through;">De R$189,90 por</span>
+								<span id="preco-produto"> R$129,90</span>
+							</div>
+							<br>
+							<div id="container-inner">
+								<ul class="area-compra">
+								<a class="btn-carrinho" href="#">
+									<div class="icon-compra">
+										<span id ="icon-compra" class="material-symbols-outlined">shopping_cart</span>
+									</div>
+								</a>
+								<a class="btn-favoritos" href="#">
+									<div class="icon-favoritos">
+										<span id="icon-compra" class="material-symbols-outlined">favorite</span>
+									</div>
+								</a>
+								<button class="btn-comprar">
+									<a  href="#">COMPRAR</a>
+									</button>
+								</ul>		
+							</div>
+						</nav>
+					</div>
+				</div>
+		</section>
+
+		<section id="sobre">
+			<div>
+				<h2 id="textosh2">Seu Funko Pop está na GeekStore!</h2>
+			</div>
+			<hr id="linhadiv">
+			<br>
+			<div class="sobre-geek">
+				<article>
+					<p id="texto-funkonageek">Eles estão por toda parte, representando quase tudo o que há de icônico na cultura pop
+						personagens de quadrinhos, filmes e séries, passando por esportes e música, até chegar na política, não há nada que não possa ganhar a sua versão colecionável.
+					</p>
+					<br>
+					<br>
+					<p id="texto-funkonageek">A Geek Fanáticos tem um dos maiores acervos de Funko Pop no Brasil, com mais de 1.100 modelos diferentes em estoque para pronta entrega. E estamos sempre trazendo as últimas novidades, 
+						para os mais exigentes colecionadores. Com certeza temos seu Funko Pop aqui!.
+					</p>
+					<br>
+					<br>
+					<p id="texto-funkonageek">Trabalhamos também com uma grande linha de colecionáveis, como action figures, chaveiros, estátuas de rock, bustos, e muito mais.
+						Todos produtos oficiais, novos, licenciados e com garantia, para que você que coleciona possa realizar sua compra com toda a segurança.
+					</p>
+				</article>
+				<figure>
+					<img id="img-anuncio" src="./assets/img/Loja-GeekStore.jpg" height="500px">
+				</figure>
+			</div>
+		</section>
+
+		<footer class="style-footer">
+			<hr id="linhadiv">
+			<div class="style-container">
+				<div class="style-content">
+					<div class="style-logo-left">
+						<img src="./assets/img/GEEKSTORE_Logo.png" alt="Cultura Geek" height="150px" width="200px">
+					</div>
+				</div>
+
+				<nav class="style-right">
+					<ul>
+						<span class="style-title">Teste 1</span>
+						<li class="style-item-navfooter">
+							<a></a>
+						</li>
+					</ul>
+					<ul>
+						<span class="style-title">Teste 2</span>
+					</ul>
+					<ul>
+						<span class="style-title">Teste 2</span>
+					</ul>
+				</nav>
+				<div class="style-bottom">
+					<div></div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
