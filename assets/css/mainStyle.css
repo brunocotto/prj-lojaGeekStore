@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
 /*seletor global*/
 * {
+    font-family: Roboto,sans-serif;
     text-decoration: none;
     padding: 0;
     margin: 0;
@@ -10,22 +11,38 @@ html {
     scroll-behavior: smooth;
 }
 /*utilizado para dividir as seções da página*/
-.linhadiv {
-    border: none;
-    background-color: #202020;;
-    height: 1px;
+.textos-titleh2 {
+    font-family: Roboto,sans-serif;
+    color: #fff;
+    opacity: 0.9;
+    font-size: 1.5rem;
+    background-color: transparent;
 }
 /*container header da página */
 .container-header {
+    min-width: 1420px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    background-color: #101013;
+    justify-content: center;
+    background-color: #161616;
+}
+.style-container-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 1420px;
+    background-color: #161616;
+}
+.style-header-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 /*container de estilo do menu de navegação do cabeçalho(header) */
 .style-nav-header {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     /*1rem = 16px, 96px de distância do display search para o logo no header*/
     margin-left: 6rem;
@@ -37,9 +54,10 @@ html {
     justify-content: center;
 }
 /*correção feita, tirei a largura e altura da imagem e configurei no css..*/
-.style-logo-header img {
-    width: 200px;
-    height: 150px;
+.style-logo-header img,
+.style-logo-left img {
+    width: 230px;
+    height: 180px;
 }
 /*container de estilo do display search no menu*/
 .container-search {
@@ -47,8 +65,7 @@ html {
     align-items: center;
     justify-content: center;
     /*4 * 16 = 64px de altura*/
-    height: 4rem;
-    background-color: #101013;
+    background-color: #161616;
 }
 /*estilização do input, entrada do texto de pesquisa*/
 .search-input {
@@ -56,7 +73,7 @@ html {
     color: #fff;
     height: 30px;
     background-color: transparent;
-    inline-size: 700px;
+    inline-size: 600px;
     /*Os quatro valores border-radius representam os cantos 1-superior esquerdo,
     2-superior direito, 3-inferior direito e 4-inferior esquerdo respectivamente,
     nessa ordem*/
@@ -83,6 +100,7 @@ html {
     cursor: pointer
 }
 .container-menu {
+    margin-left: 6rem;
     display: flex;
     align-items: flex-start;
 }
@@ -171,7 +189,7 @@ html {
 .nav-list {
     min-width: 1400px;
     height: 50px;
-    background-color: #101013;
+    background-color: #161616;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -212,29 +230,42 @@ html {
     width: 100%;
 }
 #carrosel-boot {
-    background-color: #101013;
+    min-width: 1420px;
+    background: linear-gradient(270deg,#09090a,#121214);
     width: 100%;
 }
-#img-carrosel {
+#carrosel-boot::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    background-color: #202020;
+    display: block;
+}
+#carrosel-boot img {
+    width: 100%;
+}
+.container-marcas {
     width: 100%;
 }
 .container-img{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: #101013; 
+    background: linear-gradient(270deg,#09090a,#121214);
 }
 .marcas {
+    min-width: 1420px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #101013;
+    background: linear-gradient(270deg,#09090a,#121214);
 }
 .nav-marcas {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #101013;
+    background-color: transparent;
     inline-size: 1000px;
     margin: 50px auto;
 }
@@ -242,15 +273,20 @@ html {
     margin: 0 15px;
     cursor: pointer;
 }
-#textosh2 {
-    margin-left: 2rem;
-    color: #fff;
-    opacity: 0.9;
-    font-size: 1.5rem;
+/*Pseudo elemento do css, usado para criar a linha de divisão:)*/
+.textos-titleh2::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    background-color: #202020;
+    display: block;
 }
 #destaques,
-#mais-vendidos {
-    background-color: #101013;
+#mais-vendidos,
+#funko-colecionaveis {
+    min-width: 1420px;
+    background: linear-gradient(270deg,#09090a,#121214);
 }
 .recentes {
     display: flex;
@@ -258,8 +294,31 @@ html {
     align-items: center;
     padding: 50px 100px;
 }
+.style-btnlist-funko {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;  
+    transition: 0.2s
+}
+.style-btnlist-funko:hover {
+    background-color: #6833e4;
+}
+.style-btnlist-funko svg { 
+    color: #fff;
+    opacity: 0.7;
+    margin: 0;
+    padding: 0;
+    width: 16px;
+    height: 16px;
+}
 .container-object {
-    background-color: #101013;
+    background-color: transparent;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -283,7 +342,7 @@ html {
     height: 100%;
 }
 #container-img figure img{
-    background-color: #101013;
+    background-color: linear-gradient(270deg,#09090a,#121214);
     width: 100%;
     height: 100%;
     border: none;
@@ -374,7 +433,7 @@ html {
 .btn-favoritos {
     margin-left: 15px;
 }
-.recentemente-vendidos {
+.itens-colecionaveis {
     padding: 50px 100px;
     margin-top: 20px;
     display: flex;
@@ -383,51 +442,71 @@ html {
 }
 #sobre {
     width: 100%;
-    height: 700px;
-    background-color: #101013;  
+    background: linear-gradient(270deg,#09090a,#121214);
 }
-.sobre-geek {
+/*Pseudo elemento do css, usado para criar a linha de divisão:)*/
+#sobre::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    background-color: #202020;
+    display: block;
+}
+.container-sobre-geek {
+    min-width: 1420px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #101013;
-    height: 100%;
+}
+.sobre-geek {
+    padding: 50px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent
 }
 .sobre-geek article{
-    display: flex;
-    flex-direction: column;
+    display: block;
     align-items: center;
-    width: 50%;
-    padding: 25px;
+    width: 800px;
+    max-width: 800px;
+}
+.sobre-geek article p{
+    display: block;
 }
 .sobre-geek figure{
+    width: 800px;
+    max-width: 800px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 50%;
     padding: 25px;
 }
 .sobre-geek figure img{
     border-radius: 6px;
 }
-#texto-funkonageek{
-    line-height: 30px;
+.texto-funkonageek{
+    font-family: Roboto,sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 36px;
     color: #fff;
     opacity: 0.8;
-    font-size: 1.2rem;
 }
 .style-footer {
+    min-width: 1420px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #121214;
 }
-.style-container {
+.style-container-footer {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 1320px;
+    width: 1420px;
     background-color: #121214;
 }
 .style-content {
@@ -441,10 +520,6 @@ html {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-}
-.style-logo-left img{
-    width: 250px;
-    height: 200px;
 }
 .style-right {
     display: flex;
@@ -502,10 +577,10 @@ html {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 112px;
+    height: 82px;
 }
 .style-social-icons {
-    width: 400px;
+    width: 300px;
     height: 50px;
     display: flex;
     justify-content: space-around;
