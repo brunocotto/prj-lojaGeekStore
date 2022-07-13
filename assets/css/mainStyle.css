@@ -26,6 +26,7 @@ html {
     justify-content: center;
     background-color: #161616;
 }
+/*sub container header da página */
 .style-container-header {
     display: flex;
     align-items: center;
@@ -34,6 +35,7 @@ html {
     width: 1420px;
     background-color: #161616;
 }
+/*lado em que o logo é posicionado */
 .style-header-left {
     display: flex;
     align-items: center;
@@ -102,6 +104,7 @@ html {
 .container-menu {
     margin-left: 6rem;
     display: flex;
+    /* posiciona os containers itens em cima */
     align-items: flex-start;
 }
 .container-acesso {
@@ -136,6 +139,9 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#icon-lupa {
+    color: #000;
 }
 .bi-person,
 .material-symbols-outlined {
@@ -285,7 +291,7 @@ html {
     width: 140px;
     height: 60px;
 }
-/*Pseudo elemento do css, usado para criar a linha de divisão:)*/
+/*Pseudo elemento do css, usado para criar a linha de divisão*/
 .textos-titleh2::after {
     content: "";
     width: 100%;
@@ -483,7 +489,6 @@ html {
     flex-direction: column;
     align-items: center;
     width: 800px;
-    max-width: 800px;
     text-align: center;
 }
 .sobre-geek article p{
