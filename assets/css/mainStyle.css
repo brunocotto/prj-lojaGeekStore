@@ -130,9 +130,15 @@ html {
     font-size: 100;
     margin: auto;
     color: #fff;
-    padding: 10px 2px;
+    margin-left: 3px;
 }
-#icon {
+.login svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bi-person,
+.material-symbols-outlined {
     color: #6833e4;
 }
 #entrar {
@@ -140,17 +146,23 @@ html {
     font-weight: bold;
     opacity: 0.9;
 }
+#button-carrinho,
+#button-favoritos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin-left: 15px;
+}
 .carcompras, 
 .favoritos {
     display: flex;
+    align-items: center;
     cursor: pointer;
 }
 .carcompras span,
 .favoritos span {
-    font-size: 100;
-    margin: auto;
-    color: #fff;
-    padding: 10px 2px;
+    color: #6833e4;
 }
 #btn-criarconta {
     list-style-type: none;
@@ -167,7 +179,9 @@ html {
     border-radius: 6px;
     transition: 0.4s;
     cursor: pointer;
-    
+    font-size: 0.75rem;
+    font-weight: bold;
+    opacity: 0.9;  
 }
 .button-criarconta:hover {
     background-color:  #6833e4;
@@ -180,12 +194,6 @@ html {
     opacity: 0.9;
     cursor: pointer;
 }
-.button-carrinho,
-.button-favoritos {
-    list-style-type: none;
-    margin-left: 15px;
-}
-
 .nav-list {
     min-width: 1400px;
     height: 50px;
@@ -201,12 +209,12 @@ html {
     list-style: none;
     margin-right: 10rem;
 }
-#nav-item {
+.nav-item {
     margin: 0 20px;
     opacity: 0.5;
     transition: 0.4s;
 }
-#nav-item:hover{
+.nav-item:hover{
     opacity: 0.9;
 }
 /*animação da parte de baixo dos textos do menu*/
@@ -269,9 +277,13 @@ html {
     inline-size: 1000px;
     margin: 50px auto;
 }
-#marcas-item {
+.marcas-item {
     margin: 0 15px;
     cursor: pointer;
+}
+.img-marcas {
+    width: 140px;
+    height: 60px;
 }
 /*Pseudo elemento do css, usado para criar a linha de divisão:)*/
 .textos-titleh2::after {
@@ -361,7 +373,7 @@ html {
     justify-content: center;
     align-items: center;
 }
-#container-txtanuncio {
+.container-txtanuncio {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -379,11 +391,13 @@ html {
     font-size: 1.3rem;
 }
 .area-compra {
+    list-style-type: none;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
 }
+#icon-favoritos,
 #icon-compra {
     font-size: 30px;
     color: #6833e4;
@@ -397,13 +411,6 @@ html {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-}
-.btn-carrinho span,
-.btn-favoritos span {
-    font-size: 200px;
-    color: #fff;
-    border-radius: 6px;
-    transition: 0.4s;
 }
 .btn-comprar {
     padding: 10px 15px;
@@ -442,6 +449,7 @@ html {
 }
 #sobre {
     width: 100%;
+    min-width: 1420px;
     background: linear-gradient(270deg,#09090a,#121214);
 }
 /*Pseudo elemento do css, usado para criar a linha de divisão:)*/
@@ -454,6 +462,7 @@ html {
     display: block;
 }
 .container-sobre-geek {
+    width: 100%;
     min-width: 1420px;
     display: flex;
     justify-content: center;
@@ -466,16 +475,22 @@ html {
     align-items: center;
     background: transparent
 }
+#texto-tudonageek {
+    color: #6833e4;
+    text-align: center;
+}
 .sobre-geek article{
-    display: block;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     width: 800px;
     max-width: 800px;
+    text-align: center;
 }
 .sobre-geek article p{
     display: block;
 }
-.sobre-geek figure{
+.container-imglojaGeek {
     width: 800px;
     max-width: 800px;
     display: flex;
@@ -483,7 +498,8 @@ html {
     align-items: center;
     padding: 25px;
 }
-.sobre-geek figure img{
+#img-lojaGeek {
+    height: 500px;
     border-radius: 6px;
 }
 .texto-funkonageek{
@@ -528,6 +544,7 @@ html {
     width: 70%;
 }
 .style-title {
+    list-style-type: none;
     font-family: Roboto,sans-serif;
     font-size: 16px;
     font-weight: 700;
